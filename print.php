@@ -8,7 +8,15 @@ session_start();
 <body>
 <?php
 function createpdfticket(bezeichnung, preis){
-    
+
+}
+function addtickettoprintlist(dateiname){
+    $inhalt = "generalp1";
+
+    $handle = fopen ("general.txt", "w");
+    fwrite ($handle, $inhalt);
+    fclose ($handle);
+
 }
 if(isset($_SESSION["payok"])){
   if($_SESSION['art1']<>0){
