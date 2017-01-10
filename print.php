@@ -7,6 +7,9 @@ session_start();
 </head>
 <body>
 <?php
+function createpdfticket(bezeichnung, preis){
+    
+}
 if(isset($_SESSION["payok"])){
   if($_SESSION['art1']<>0){
   for($i=0;$i<$_SESSION['art1'];$i++){
